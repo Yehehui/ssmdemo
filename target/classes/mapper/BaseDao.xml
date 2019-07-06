@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.mju.edu.DAO.BaseDao">
+
+    <!-- 按id查找一个 -->
+    <select id="select" resultType="map">
+          select * from ${tablename} where id=#{id}
+    </select>
+
+    <!-- 查询所有 -->
+    <select id="selectAll" resultType="map">
+         select * from ${tablename}
+    </select>
+
+    <insert id="add" >
+         insert into ${tablename} values
+        <foreach collection="params"  item="param" open="(" separator="," close=")" >
+            #{param}
+        </foreach>
+    </insert>
+
+    <update id="update">
+         update ${tablename}
+        <set>
+            <foreach collection="params"  item="param" >
+                ${param},
+            </foreach>
+        </set>
+        where id=#{id}
+    </update>
+
+    <delete id="delete">
+    	  delete from ${tablename} where id=#{id}
+    </delete>
+
+</mapper>

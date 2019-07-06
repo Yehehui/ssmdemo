@@ -1,0 +1,24 @@
+.search_bar{
+    background: #210d79;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #fff;
+    padding-left: 20px;
+    line-height: 40px;
+}
+#search_btn{
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#table_content{
+    margin-right: 10px;
+}
+body{
+    overflow-y: scroll;
+}
+#table_content tr:first-child{
+    background: #210d79;
+    color: #fff;
+}

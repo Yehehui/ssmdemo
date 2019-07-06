@@ -1,0 +1,62 @@
+#qhnavbar>ul>.active>a{
+    background: none;
+    font-size: 15px;
+    font-weight: bolder;
+}
+#carousel-example-generic{
+    margin-top: -20px;
+}
+.carousel-inner>div.item{
+    height:380px;
+    background-position: center center !important;
+}
+@media(min-width: 769px){
+    .carousel-inner>div{
+        height:380px;
+    }
+}
+@media(max-width: 768px){
+    .carousel-inner>div{
+        height:auto;
+    }
+}
+.page-header{
+    border-bottom: 4px #ddd solid;
+}
+#courselist>.page-header>h3{
+    position: relative;
+}
+#courselist>.page-header>h3>a{
+    font-size: 16px;
+    position: absolute;
+    color: #666;
+    font-weight: 100;
+    right:0px;
+}
+.course_price{
+    position: relative;
+}
+.course_group{
+    position:absolute;
+    right: 0;
+}
+.thumbnail{
+    border: 1px #fff solid;
+    padding:10px;
+    border-radius: 0;
+}
+.thumbnail:hover{
+    border: 1px #ccc solid;
+    box-shadow: .5px .5px 1px #ddd;
+    outline: 1px #ccc;
+}
+#courselist>.thumbnail>.caption>h4>a{
+    color: #ddd;
+}
+.footer{
+    background: #ddd;
+    height: 60px;
+}
+.footer.cr{
+    text-align: center !important;
+}
